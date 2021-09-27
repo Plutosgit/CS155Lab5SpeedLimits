@@ -1,0 +1,19 @@
+﻿<Window x:Class="CS155Lab5SpeedLimits.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CS155Lab5SpeedLimits"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="canvasMain">
+        <TextBox x:Name="txtSpeedLimit" HorizontalAlignment="Left" Height="24" Margin="330,68,0,0" TextWrapping="Wrap" Text="Enter speed limit" VerticalAlignment="Top" Width="135" GotFocus="txtSpeedLimit_GotFocus"/>
+        <Label x:Name="lblHeading" Content="GUI for splashing status of speed" HorizontalAlignment="Left" Height="31" Margin="264,16,0,0" VerticalAlignment="Top" Width="201"/>
+        <TextBox x:Name="txtMySpeed" HorizontalAlignment="Left" Height="24" Margin="330,116,0,0" TextWrapping="Wrap" Text="Enter your speed" VerticalAlignment="Top" Width="135" GotFocus="txtMySpeed_GotFocus"/>
+        <Label x:Name="lblSpeedLimit" Content="Speed Limit" HorizontalAlignment="Left" Height="43" Margin="155,68,0,0" VerticalAlignment="Top" Width="170"/>
+        <Label x:Name="lblMySpeedLimit" Content="Enter your speed" HorizontalAlignment="Left" Height="40" Margin="155,116,0,0" VerticalAlignment="Top" Width="170"/>
+        <Label x:Name="lblStatus" Content="x" HorizontalAlignment="Left" Height="29" Margin="330,235,0,0" VerticalAlignment="Top" Width="313"/>
+        <Button x:Name="cmdCheckSpeedLimit" Content="Check Speed" HorizontalAlignment="Left" Height="33" Margin="330,176,0,0" VerticalAlignment="Top" Width="135" Click="cmdCheckSpeedLimit_OnClick" IsDefault="True"/>
+
+    </Grid>
+</Window>
